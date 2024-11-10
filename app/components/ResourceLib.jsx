@@ -42,7 +42,7 @@ const ResourceLibrary = () => {
             are primary ways to prepare all young brains for reading.
           </p>
         </div>
-          
+          {/* I HAVE TO ADD A BRAIN PICTURE HERE */}
 
         {/* Resource Library */}
         <h2 className="text-4xl font-bold text-primary text-center mb-10">
