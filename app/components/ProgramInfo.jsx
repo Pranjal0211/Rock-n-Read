@@ -12,7 +12,7 @@ const ProgramInfo = () => {
     },
     {
       icon: UserIcon,
-      title: "Research-Backed Support for Parents",
+      title: "Researched Support for Parents",
       description:
         "Parents need help to prepare their child’s brain for reading. Rock 'n' Read uses evidence-based strategies proven to improve literacy.",
       iconColor: "text-accentRed",
@@ -27,12 +27,20 @@ const ProgramInfo = () => {
   ];
 
   return (
-    <section className="bg-neutralGray py-16">
+    <section
+      className="bg-cover bg-center min-h-screen"
+      style={{
+        backgroundImage: "url('/baby-singing.webp ')", // Replace with your image path
+      }}
+    >
+      <div className="bg-gray-900/70 min-h-screen flex items-center">
       <div className="container mx-auto px-6">
         <h2 className="text-4xl font-bold text-primary text-center mb-10">
           Why Rock 'n' Read?
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-100"> */}
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 
+        shadow-lg flex flex-col justify-between h-[400px] w-[1000px] mx-auto gap-10 mt-16">
           {programDetails.map((program, index) => (
             <ProgramCard
               key={index}
@@ -44,6 +52,7 @@ const ProgramInfo = () => {
           ))}
         </div>
       </div>
+    </div>
     </section>
   );
 };

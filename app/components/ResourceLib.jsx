@@ -29,20 +29,17 @@ const ResourceLibrary = () => {
   ];
 
   return (
-    <section className="bg-neutralGray py-16">
-      <div className="container mx-auto px-6">
-        {/* Brain Research Section */}
-        <div className="mb-10">
-          <h2 className="text-4xl font-bold text-primary text-center mb-6">
-            It’s All About the Brain!
-          </h2>
-          <p className="text-center text-textGray text-lg">
-            Brain research has found that sound processing and retention is the
-            key to language and literacy. Singing and learning basic music skills
-            are primary ways to prepare all young brains for reading.
-          </p>
-        </div>
-          {/* I HAVE TO ADD A BRAIN PICTURE HERE */}
+    <section
+    // className="relative w-full h-screen bg-cover bg-center"
+    // style={{ backgroundColor: "#FFC9B5" }} // Replace with your desired background color
+
+    className="relative w-full h-screen bg-gradient-to-bl from-teal-300 via-blue-200 to-white bg-cover bg-center"
+  >
+    <div className="absolute inset-0 flex flex-col items-center justify-center px-6">
+
+    {/* <section className="bg-neutralGray py-16">
+      <div className="container mx-auto px-6"> */}
+
 
         {/* Resource Library */}
         <h2 className="text-4xl font-bold text-primary text-center mb-10">

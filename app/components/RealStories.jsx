@@ -27,7 +27,7 @@ const RealStories = () => {
   ];
 
   return (
-    <section className="bg-neutralGray py-16">
+    <section className="w-full h-screen bg-neutralGray py-16">
       <div className="container mx-auto px-6">
         <h2 className="text-4xl font-bold text-primary text-center mb-10">
           Real Stories & Testimonials
