@@ -3,38 +3,36 @@ import Image from 'next/image';
 
 const LandingPage = () => {
   return (
-    <div className="flex h-screen bg-gradient-to-r from-primary to-accentYellow"> {/* Gradient background */}
-      {/* Text Section */}
-      <div className="flex-1 flex items-center justify-center p-10">
-        <div className="bg-neutralGray shadow-lg rounded-lg p-8 text-center"> {/* Card style for text */}
-          <h1 className="text-5xl font-extrabold text-primary mb-4">The Rock 'n' Read Project</h1>
-          <h3 className="text-3xl font-bold text-accentRed mb-4">Sing Today... Read Forever</h3>
-          <p className="text-lg text-textGray mb-6">
-            We aims to engage children in singing and developing basic music skills to enhance their reading and learning abilities.  
-          </p>
-          <button className="bg-primary text-white px-6 py-3 rounded-lg hover:bg-accentRed transition duration-300 transform hover:scale-105"> {/* Button styling */}
-            Learn More
-          </button>
-        </div>
-      </div>
-
-      {/* Image Section */}
-      <div className="flex-1"> {/* Added padding here */}
-      <div className="relative h-full w-full p-5 overflow-hidden">
+    <div className="relative h-screen w-full">
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0">
         <Image
-          src="/guitar-girl.jpeg" // Adjust to your actual image path
+          src="/headphone-girl.webp" // Adjust to your actual image path
           alt="Rock ‘n’ Read Project"
           layout="fill" // Fill the parent element
-          objectFit="cover" // Cover the area while maintaining aspect ratio
-          //className="absolute inset-0"
-          className="rounded-lg" // Optional: adds rounded corners
+          objectFit="cover" // Maintain aspect ratio
+          className="absolute inset-0"
         />
+        {/* Dark Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-gray-900/60 to-gray-900/80"></div>
       </div>
-    </div>
+
+      {/* Content Section */}
+      <div className="relative z-10 flex items-center justify-center h-full text-center px-6">
+        <div className="max-w-3xl">
+          <h1 className="font-playfair text-5xl font-extrabold text-white mb-6">The Rock 'n' Read Project</h1>
+          <h3 className="font-playfair italic bold text-2xl text-gray-300 mb-6">
+            Rock 'n' Read aims to engage children in singing and developing basic music skills 
+            to enhance their reading and learning abilities. Join us in making literacy fun, interactive, and accessible for every child.
+          </h3>
+          <button className="font-roboto text-lg px-6 py-3 bg-gray-900 text-white rounded-lg shadow-md hover:bg-white hover:text-black transition duration-300">
+            Get Started
+          </button>
+
+        </div>
+      </div>
     </div>
   );
 };
 
 export default LandingPage;
-
-///guitar-girl.jpeg

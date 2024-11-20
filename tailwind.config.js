@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       colors: {
         primary: '#4A90E2', // Blue
+        cblue: '#CBEEF3', //cyan blue
         accentYellow: '#FEC107', // Bright Yellow
         accentRed: '#E94E77', // Soft Red
         neutralGray: '#F5F5F5', // Light Gray
@@ -19,6 +20,10 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        playfair: ['"Playfair Display"', 'serif'],
+        roboto: ['Roboto', 'sans-serif'],
+      }
     },
   },
   plugins: [],
